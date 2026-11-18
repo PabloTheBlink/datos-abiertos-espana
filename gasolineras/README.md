@@ -2,7 +2,7 @@
 
 Estaciones de servicio con dirección, ubicación y precios de carburantes comunicados a la fuente pública. Los precios pueden cambiar desde su última actualización.
 
-- Registros: 11553
+- Registros: 11554
 - Última actualización (UTC): 2026-11-18
 - Fuente: [Ministerio para la Transición Ecológica](https://geoportalgasolineras.es/)
 - Web: [https://fuelspot.devetty.es](https://fuelspot.devetty.es)
