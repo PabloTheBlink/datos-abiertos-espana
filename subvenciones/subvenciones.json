@@ -2312,23 +2312,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/941550-convocatoria-para-la-concesion-de-subvenciones-para-sufragar-los?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1143108,
-    "numero_convocatoria": "941547",
-    "descripcion": "Resolución de 10 de noviembre de 2026 del Rector de la Universidad de Burgos, por la que se convocan ayudas de matrícula, becas de manutención y alojamiento para estudiantes universitarios admitidos al programa UBU-REFUGIO curso 2026/2027",
-    "fecha_recepcion": "2026-11-11",
-    "organismo": "UNIVERSIDAD DE BURGOS",
-    "nivel1": "OTROS",
-    "nivel2": "UNIVERSIDAD DE BURGOS",
-    "importe": 48558.81,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": null,
-    "fecha_fin_solicitud": "2026-11-19",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941547",
-    "slug": "941547-resolucion-de-10-de-noviembre-de-2026-del-rector-de-la-universidad-de",
-    "url": "https://subvenciones.devetty.es/ayuda/941547-resolucion-de-10-de-noviembre-de-2026-del-rector-de-la-universidad-de?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1143107,
     "numero_convocatoria": "941546",
     "descripcion": "Ayuda a Emprendedores 2026 ( otros sectores)",
@@ -10419,23 +10402,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939142",
     "slug": "939142-ayudas-economicas-para-familias-con-menores-en-edad-escolar-entre-los",
     "url": "https://subvenciones.devetty.es/ayuda/939142-ayudas-economicas-para-familias-con-menores-en-edad-escolar-entre-los?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140693,
-    "numero_convocatoria": "939132",
-    "descripcion": "Resolución de 29 de octubre de 2026, de la Presidencia de la Generalitat, por la que se convocan, para el año 2026, subvenciones destinadas al saneamiento de los ayuntamientos de la Comunitat Valenciana en especial dificultad económico-financiera.",
-    "fecha_recepcion": "2026-10-30",
-    "organismo": "SECRETARÍA AUTONÓMICA DE POLÍTICA INSTITUCIONAL Y COHESIÓN TERRITORIAL",
-    "nivel1": "AUTONOMICA",
-    "nivel2": "COMUNITAT VALENCIANA",
-    "importe": 500000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Otras actuaciones de carácter económico",
-    "fecha_inicio_solicitud": "2026-11-05",
-    "fecha_fin_solicitud": "2026-11-19",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939132",
-    "slug": "939132-resolucion-de-29-de-octubre-de-2026-de-la-presidencia-de-la",
-    "url": "https://subvenciones.devetty.es/ayuda/939132-resolucion-de-29-de-octubre-de-2026-de-la-presidencia-de-la?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140676,

@@ -2,8 +2,8 @@
 
 Convocatorias de ayudas públicas con organismo convocante, importes, finalidad y plazos disponibles. La vigencia y las condiciones se consultan en la fuente oficial.
 
-- Registros: 1297
-- Última actualización (UTC): 2026-11-18
+- Registros: 1295
+- Última actualización (UTC): 2026-11-19
 - Fuente: [BDNS (Ministerio de Hacienda)](https://www.infosubvenciones.es/)
 - Web: [https://subvenciones.devetty.es](https://subvenciones.devetty.es)
 - Columnas: id, numero_convocatoria, descripcion, fecha_recepcion, organismo, nivel1, nivel2, importe, beneficiario, finalidad, fecha_inicio_solicitud, fecha_fin_solicitud, url_bdns, slug, url
