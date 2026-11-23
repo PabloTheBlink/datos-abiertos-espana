@@ -9452,23 +9452,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/939372-bases-del-concurso-del-cartel-anunciador-del-carnaval-2027?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1140924,
-    "numero_convocatoria": "939363",
-    "descripcion": "CONVOCATORIA PUBLICA DE SUBVENCIONES PARA LAS ASOCIACIONES DE VECINOS: REALIZACION DE ACTIVIDADES Y MANTENIMIENTO Y ALQUILER DE LAS SEDES SOCIALES",
-    "fecha_recepcion": "2026-11-03",
-    "organismo": "AYUNTAMIENTO DE PONFERRADA",
-    "nivel1": "LOCAL",
-    "nivel2": "PONFERRADA",
-    "importe": 25574,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Servicios Sociales y Promoción Social",
-    "fecha_inicio_solicitud": "2026-11-09",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939363",
-    "slug": "939363-convocatoria-publica-de-subvenciones-para-las-asociaciones-de-vecinos",
-    "url": "https://subvenciones.devetty.es/ayuda/939363-convocatoria-publica-de-subvenciones-para-las-asociaciones-de-vecinos?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1140920,
     "numero_convocatoria": "939359",
     "descripcion": "CONVOCATORIA DE BECAS DE LA ESCUELA MUNICIPAL DE MUSICA ROBERT GERHARD. CURSO 2026/27",
@@ -9637,23 +9620,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939337",
     "slug": "939337-concurso-de-belenes-de-monovar-y-pedanias-navidad-2026",
     "url": "https://subvenciones.devetty.es/ayuda/939337-concurso-de-belenes-de-monovar-y-pedanias-navidad-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140893,
-    "numero_convocatoria": "939332",
-    "descripcion": "AYUDAS ECONÓMICAS PARA PROYECTOS DEPORTE PARA TODOS - TEMPORADA 2026/2027",
-    "fecha_recepcion": "2026-11-03",
-    "organismo": "ZARAGOZA DEPORTE, S.A.",
-    "nivel1": "LOCAL",
-    "nivel2": "ZARAGOZA",
-    "importe": 100000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Otras Prestaciones económicas",
-    "fecha_inicio_solicitud": "2026-11-16",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939332",
-    "slug": "939332-ayudas-economicas-para-proyectos-deporte-para-todos-temporada",
-    "url": "https://subvenciones.devetty.es/ayuda/939332-ayudas-economicas-para-proyectos-deporte-para-todos-temporada?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140891,
@@ -9994,23 +9960,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939227",
     "slug": "939227-convocatoria-de-las-subvenciones-para-la-recuperacion-rehabilitacion",
     "url": "https://subvenciones.devetty.es/ayuda/939227-convocatoria-de-las-subvenciones-para-la-recuperacion-rehabilitacion?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140780,
-    "numero_convocatoria": "939219",
-    "descripcion": "Convocatoria para la concesión en régimen de concurrencia no competitiva de ayudas de transporte para la realización de estudios postobligatorios fuera del municipio durante el curso 2026-2027",
-    "fecha_recepcion": "2026-11-02",
-    "organismo": "AYUNTAMIENTO DE TONA",
-    "nivel1": "LOCAL",
-    "nivel2": "TONA",
-    "importe": 7500,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": "2026-10-31",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939219",
-    "slug": "939219-convocatoria-para-la-concesion-en-regimen-de-concurrencia-no",
-    "url": "https://subvenciones.devetty.es/ayuda/939219-convocatoria-para-la-concesion-en-regimen-de-concurrencia-no?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140769,
@@ -10368,23 +10317,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939097",
     "slug": "939097-aprobacion-de-bases-y-convocatoria-del-xxiv-concurso-de-engalanamiento",
     "url": "https://subvenciones.devetty.es/ayuda/939097-aprobacion-de-bases-y-convocatoria-del-xxiv-concurso-de-engalanamiento?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140655,
-    "numero_convocatoria": "939094",
-    "descripcion": "Resolución de la Vicerrectora de Investigación de la Universidad de Oviedo para la contratación de personal investigador y técnico de apoyo, según artículo 23.bis de la Ley 14/2011 de la Ciencia, la Tecnología y la Innovación (octubre extra 9)",
-    "fecha_recepcion": "2026-10-30",
-    "organismo": "UNIVERSIDAD DE OVIEDO",
-    "nivel1": "OTROS",
-    "nivel2": "UNIVERSIDAD DE OVIEDO",
-    "importe": 36735.17,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Investigación, desarrollo e innovación",
-    "fecha_inicio_solicitud": "2026-11-10",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939094",
-    "slug": "939094-resolucion-de-la-vicerrectora-de-investigacion-de-la-universidad-de",
-    "url": "https://subvenciones.devetty.es/ayuda/939094-resolucion-de-la-vicerrectora-de-investigacion-de-la-universidad-de?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140639,
@@ -10759,23 +10691,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938963",
     "slug": "938963-resolucion-de-28-de-octubre-de-2026-del-director-del-instituto-de",
     "url": "https://subvenciones.devetty.es/ayuda/938963-resolucion-de-28-de-octubre-de-2026-del-director-del-instituto-de?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140523,
-    "numero_convocatoria": "938962",
-    "descripcion": "Resolución de 5 de noviembre de 2026, de la Conselleria de Educación, Cultura y Universidades, por la que se aprueban las bases reguladoras y se convocan subvenciones destinadas a escuelas que imparten enseñanzas artísticas no formales de artes escénicas",
-    "fecha_recepcion": "2026-10-30",
-    "organismo": "SECRETARÍA AUTONÓMICA DE EDUCACIÓN",
-    "nivel1": "AUTONOMICA",
-    "nivel2": "COMUNITAT VALENCIANA",
-    "importe": 300000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": "2026-11-10",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938962",
-    "slug": "938962-resolucion-de-5-de-noviembre-de-2026-de-la-conselleria-de-educacion",
-    "url": "https://subvenciones.devetty.es/ayuda/938962-resolucion-de-5-de-noviembre-de-2026-de-la-conselleria-de-educacion?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140522,
@@ -13139,23 +13054,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938219",
     "slug": "938219-subvenciones-emprendimiento-2026",
     "url": "https://subvenciones.devetty.es/ayuda/938219-subvenciones-emprendimiento-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1139774,
-    "numero_convocatoria": "938213",
-    "descripcion": "VI Concurso Gilda Eguna Trapagaran 2026",
-    "fecha_recepcion": "2026-10-27",
-    "organismo": "AYUNTAMIENTO DE VALLE DE TRÁPAGA-TRAPAGARAN",
-    "nivel1": "LOCAL",
-    "nivel2": "VALLE DE TRÁPAGA-TRAPAGARAN",
-    "importe": 550,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Comercio, Turismo y Pymes",
-    "fecha_inicio_solicitud": "2026-10-26",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938213",
-    "slug": "938213-vi-concurso-gilda-eguna-trapagaran-2026",
-    "url": "https://subvenciones.devetty.es/ayuda/938213-vi-concurso-gilda-eguna-trapagaran-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1139770,
@@ -16609,23 +16507,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/937084-subvencion-para-promocion-y-educacion-afectivo-sexual?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1138637,
-    "numero_convocatoria": "937076",
-    "descripcion": "CONVOCATORIA SUBVENCIONES AYUNTAMIENTOS PARA LA CREACIÓN Y PUESTA EN MARCHA DE ESTABLECIMIENTOS MULTISERVICIOS RURALES PLAN SORIA 2026",
-    "fecha_recepcion": "2026-10-22",
-    "organismo": "DIPUTACIÓN PROVINCIAL DE SORIA",
-    "nivel1": "LOCAL",
-    "nivel2": "DIPUTACIÓN PROV. DE SORIA",
-    "importe": 96000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Otras Prestaciones económicas",
-    "fecha_inicio_solicitud": "2026-10-24",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937076",
-    "slug": "937076-convocatoria-subvenciones-ayuntamientos-para-la-creacion-y-puesta-en",
-    "url": "https://subvenciones.devetty.es/ayuda/937076-convocatoria-subvenciones-ayuntamientos-para-la-creacion-y-puesta-en?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1138632,
     "numero_convocatoria": "937071",
     "descripcion": "PANTUCOINS 2026",
@@ -18037,23 +17918,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/936493-convocatoria-publica-de-subvenciones-en-regimen-de-concurrencia?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1138051,
-    "numero_convocatoria": "936490",
-    "descripcion": "CONVOCATORIA DE SUBVENCIONES AYUNTAMIENTOS MEJORA DE LA SEGURIDAD Y SALUBRIDAD EN INMUEBLES Y MUNICIPIOS PLAN SORIA 2026",
-    "fecha_recepcion": "2026-10-20",
-    "organismo": "DIPUTACIÓN PROVINCIAL DE SORIA",
-    "nivel1": "LOCAL",
-    "nivel2": "DIPUTACIÓN PROV. DE SORIA",
-    "importe": 120000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Acceso a la vivienda y fomento de la edificación",
-    "fecha_inicio_solicitud": "2026-10-24",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936490",
-    "slug": "936490-convocatoria-de-subvenciones-ayuntamientos-mejora-de-la-seguridad-y",
-    "url": "https://subvenciones.devetty.es/ayuda/936490-convocatoria-de-subvenciones-ayuntamientos-mejora-de-la-seguridad-y?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1138049,
     "numero_convocatoria": "936488",
     "descripcion": "CONVOCATORIA DEL CONCURSO NAVIDEÑO DE BALCONES Y VENTANAS EN EL MUNICIPIO DE ALFAFAR - EJERCICIO 2026.",
@@ -18139,23 +18003,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/936472-convocatoria-2026-para-la-concesion-de-dos-premios-destinado-a?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1138028,
-    "numero_convocatoria": "936467",
-    "descripcion": "CONVOCATORIA SUBVENCIONES APOYO AL SECTOR DE LA RESINA PLAN SORIA 2026",
-    "fecha_recepcion": "2026-10-20",
-    "organismo": "DIPUTACIÓN PROVINCIAL DE SORIA",
-    "nivel1": "LOCAL",
-    "nivel2": "DIPUTACIÓN PROV. DE SORIA",
-    "importe": 75000,
-    "beneficiario": "Autónomos y pymes",
-    "finalidad": "Fomento del Empleo",
-    "fecha_inicio_solicitud": "2026-10-24",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936467",
-    "slug": "936467-convocatoria-subvenciones-apoyo-al-sector-de-la-resina-plan-soria-2026",
-    "url": "https://subvenciones.devetty.es/ayuda/936467-convocatoria-subvenciones-apoyo-al-sector-de-la-resina-plan-soria-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1138021,
     "numero_convocatoria": "936460",
     "descripcion": "XII CONCURSO FOTOGRAFIA JESUS DE PERCEVAL 2026",
@@ -18207,23 +18054,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/936449-bases-reguladoras-para-el-programa-bons-consum-alcoi-anualitat-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1138005,
-    "numero_convocatoria": "936444",
-    "descripcion": "CONVOCATORIA DE SUBVENCIONES IMPULSO DEMOGRÁFICO PLAN SORIA 2026",
-    "fecha_recepcion": "2026-10-20",
-    "organismo": "DIPUTACIÓN PROVINCIAL DE SORIA",
-    "nivel1": "LOCAL",
-    "nivel2": "DIPUTACIÓN PROV. DE SORIA",
-    "importe": 380000,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Otras Prestaciones económicas",
-    "fecha_inicio_solicitud": "2026-10-24",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936444",
-    "slug": "936444-convocatoria-de-subvenciones-impulso-demografico-plan-soria-2026",
-    "url": "https://subvenciones.devetty.es/ayuda/936444-convocatoria-de-subvenciones-impulso-demografico-plan-soria-2026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1138000,
     "numero_convocatoria": "936439",
     "descripcion": "CONVOCATORIA DE SUBVENCIONES DEL AYUNTAMIENTO DE ANDORRA EN MATERIA DE AHORRO ENERGÉTICO A TRAVÉS DE LA RENOVACIÓN DE APARATOS ELECTRODOMÉSTICOS PARA EL EJERCICIO 2026",
@@ -18273,23 +18103,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936430",
     "slug": "936430-bases-de-la-convocatoria-de-subvenciones-correspondiente-a-la",
     "url": "https://subvenciones.devetty.es/ayuda/936430-bases-de-la-convocatoria-de-subvenciones-correspondiente-a-la?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1137990,
-    "numero_convocatoria": "936429",
-    "descripcion": "CONVOCATORIA DE SUBVENCIONES A ENTIDADES DEPORTIVAS DE MONCADA PARA EL DESARROLLO DE SUS ACTIVIDADES, TEMPORADA 2025-2026",
-    "fecha_recepcion": "2026-10-20",
-    "organismo": "AYUNTAMIENTO DE MONCADA",
-    "nivel1": "LOCAL",
-    "nivel2": "MONCADA",
-    "importe": 200000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": "2026-11-03",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936429",
-    "slug": "936429-convocatoria-de-subvenciones-a-entidades-deportivas-de-moncada-para-el",
-    "url": "https://subvenciones.devetty.es/ayuda/936429-convocatoria-de-subvenciones-a-entidades-deportivas-de-moncada-para-el?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1137983,
@@ -19361,23 +19174,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936011",
     "slug": "936011-convocatoria-de-la-10a-edicion-del-concurso-de-novela-corta-ramiro",
     "url": "https://subvenciones.devetty.es/ayuda/936011-convocatoria-de-la-10a-edicion-del-concurso-de-novela-corta-ramiro?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1137561,
-    "numero_convocatoria": "936000",
-    "descripcion": "EXTRACTO CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES PARA LAS ACTIVIDADES A DESARROLLAR POR LAS ASOCIACIONES DE MAYORES DE PLASENCIA 2026.",
-    "fecha_recepcion": "2026-10-19",
-    "organismo": "AYUNTAMIENTO DE PLASENCIA",
-    "nivel1": "LOCAL",
-    "nivel2": "PLASENCIA",
-    "importe": 4000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Otras Prestaciones económicas",
-    "fecha_inicio_solicitud": "2026-10-22",
-    "fecha_fin_solicitud": "2026-11-23",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936000",
-    "slug": "936000-extracto-convocatoria-para-la-concesion-de-subvenciones-para-las",
-    "url": "https://subvenciones.devetty.es/ayuda/936000-extracto-convocatoria-para-la-concesion-de-subvenciones-para-las?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1137560,
