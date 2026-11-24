@@ -210,6 +210,7 @@ Este repositorio es **100% desatendido**:
   - Subvenciones: [Base de Datos Nacional de Subvenciones (BDNS · Ministerio de Hacienda)](https://www.infosubvenciones.es/)
   - Empleo público: [Boletín Oficial del Estado (BOE)](https://www.boe.es/)
 - **Reutilización:** La reutilización de los datos se realiza conforme a la [Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814) y las condiciones de cada fuente pública emisora, citando siempre la fuente de origen.
+- **Esta recopilación:** los CSV y JSON normalizados de este repositorio se publican bajo [CC BY 4.0](./LICENSE): puedes usarlos, también con fines comerciales, citando este repositorio y la fuente oficial de cada dataset.
 
 ---
 
