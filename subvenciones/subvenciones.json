@@ -4760,23 +4760,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/940768-segunda-convocatoria-de-subvenciones-en-regimen-de-concurrencia?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1142305,
-    "numero_convocatoria": "940744",
-    "descripcion": "GC CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES DIRIGIDAS A LOS AYUNTAMIENTOS DE GRAN CANARIA PARA CAMPAMENTOS INCLUSIVOS, CURSO 2026/2027 .",
-    "fecha_recepcion": "2026-11-09",
-    "organismo": "CABILDO INSULAR DE GRAN CANARIA",
-    "nivel1": "LOCAL",
-    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
-    "importe": 90000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": "2026-11-12",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940744",
-    "slug": "940744-gc-convocatoria-para-la-concesion-de-subvenciones-dirigidas-a-los",
-    "url": "https://subvenciones.devetty.es/ayuda/940744-gc-convocatoria-para-la-concesion-de-subvenciones-dirigidas-a-los?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1142301,
     "numero_convocatoria": "940740",
     "descripcion": "RESOLUCIÓN, de la Conselleria de Servicios Sociales, Familia e Infancia por la que se convocan, de manera anticipada, cinco becas para la realización de prácticas profesionales en la Dirección General de Dependencia y de las Personas Mayores",
@@ -4792,23 +4775,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940740",
     "slug": "940740-resolucion-de-la-conselleria-de-servicios-sociales-familia-e",
     "url": "https://subvenciones.devetty.es/ayuda/940740-resolucion-de-la-conselleria-de-servicios-sociales-familia-e?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1142297,
-    "numero_convocatoria": "940736",
-    "descripcion": "GC CONVOCATORIA DE SUBVENCIONES EXTRAORDINARIAS AL SECTOR GANADERO DE GRAN CANARIA EN RESPUESTA A LA CRISIS EN ORIENTE PRÓXIMO INICIADA EN FEBRERO DE 2026.",
-    "fecha_recepcion": "2026-11-09",
-    "organismo": "CABILDO INSULAR DE GRAN CANARIA",
-    "nivel1": "LOCAL",
-    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
-    "importe": 1800000,
-    "beneficiario": "Autónomos y pymes",
-    "finalidad": "Agricultura, Pesca y Alimentación",
-    "fecha_inicio_solicitud": "2026-11-12",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940736",
-    "slug": "940736-gc-convocatoria-de-subvenciones-extraordinarias-al-sector-ganadero-de",
-    "url": "https://subvenciones.devetty.es/ayuda/940736-gc-convocatoria-de-subvenciones-extraordinarias-al-sector-ganadero-de?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1142296,
@@ -4860,23 +4826,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940705",
     "slug": "940705-resolucion-rey-juan-carlos-convocatoria-concurso-de-relato-breve-de-la",
     "url": "https://subvenciones.devetty.es/ayuda/940705-resolucion-rey-juan-carlos-convocatoria-concurso-de-relato-breve-de-la?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1142265,
-    "numero_convocatoria": "940704",
-    "descripcion": "GC CONVOCATORIA DE SUBVENCIONES EXTRAORDINARIAS AL SECTOR PESQUERO ARTESANAL Y ACUÍCOLA DE GRAN CANARIA EN RESPUESTA A LA CRISIS EN ORIENTE PRÓXIMO INICIADA EN FEBRERO DE 2026.",
-    "fecha_recepcion": "2026-11-09",
-    "organismo": "CABILDO INSULAR DE GRAN CANARIA",
-    "nivel1": "LOCAL",
-    "nivel2": "CABILDO INSULAR DE GRAN CANARIA",
-    "importe": 400000,
-    "beneficiario": "Autónomos y pymes",
-    "finalidad": "Agricultura, Pesca y Alimentación",
-    "fecha_inicio_solicitud": "2026-11-12",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/940704",
-    "slug": "940704-gc-convocatoria-de-subvenciones-extraordinarias-al-sector-pesquero",
-    "url": "https://subvenciones.devetty.es/ayuda/940704-gc-convocatoria-de-subvenciones-extraordinarias-al-sector-pesquero?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1142258,
@@ -8704,23 +8653,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/939545-acuerdo-de-junta-de-gobierno-local-de-5-de-octubre-de-2026-por-el-que?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1141105,
-    "numero_convocatoria": "939544",
-    "descripcion": "CONVOCATORIA PÚBLICA PARA LA CONCESIÓN DE SUBVENCIONES DESTINADAS PROYECTOS DE CONCILIACIÓN FAMILIAR DESARROLLADOS POR ASOCIACIONES DE MADRES Y PADRES DE ALUMNOS/AS (AMPAS) DE VALDEPEÑAS 2026",
-    "fecha_recepcion": "2026-11-03",
-    "organismo": "AYUNTAMIENTO DE VALDEPEÑAS",
-    "nivel1": "LOCAL",
-    "nivel2": "VALDEPEÑAS",
-    "importe": 20000,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Educación",
-    "fecha_inicio_solicitud": null,
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939544",
-    "slug": "939544-convocatoria-publica-para-la-concesion-de-subvenciones-destinadas",
-    "url": "https://subvenciones.devetty.es/ayuda/939544-convocatoria-publica-para-la-concesion-de-subvenciones-destinadas?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1141103,
     "numero_convocatoria": "939542",
     "descripcion": "BASES DE PARTICIPACIÓN EN EL DESFILE DE COMPARSAS CARNAVALCAZAR 2026",
@@ -10710,23 +10642,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/938961-convocatoria-12026-ayudas-leader-2023-2027-apoyo-a-inversiones-m01?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1140507,
-    "numero_convocatoria": "938946",
-    "descripcion": "Orden de 29 de octubre de 2026, C. de Desregulación, Familia y Ayudas Sociales, por la que se convocan subvenciones, cofinanciadas por el Fondo Social Europeo Plus (FSE+), para el desarrollo del Programa de digitalización para jóvenes residentes en CyL.",
-    "fecha_recepcion": "2026-10-30",
-    "organismo": "CONSEJERÍA DE DESREGULACIÓN, FAMILIA Y AYUDAS SOCIALES",
-    "nivel1": "AUTONOMICA",
-    "nivel2": "CASTILLA Y LEÓN",
-    "importe": 220847.33,
-    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
-    "finalidad": "Servicios Sociales y Promoción Social",
-    "fecha_inicio_solicitud": "2026-11-05",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938946",
-    "slug": "938946-orden-de-29-de-octubre-de-2026-c-de-desregulacion-familia-y-ayudas",
-    "url": "https://subvenciones.devetty.es/ayuda/938946-orden-de-29-de-octubre-de-2026-c-de-desregulacion-familia-y-ayudas?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1140504,
     "numero_convocatoria": "938943",
     "descripcion": "Convocatoria para la concesión de subvenciones en materia de acción social 2026 del Ayuntamiento de Benigànim",
@@ -11422,23 +11337,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938715",
     "slug": "938715-subvencion-a-clubes-deportivos-del-municipio-de-benidorm-que-dispongan",
     "url": "https://subvenciones.devetty.es/ayuda/938715-subvencion-a-clubes-deportivos-del-municipio-de-benidorm-que-dispongan?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1140268,
-    "numero_convocatoria": "938707",
-    "descripcion": "XI CONCURSO DE ESCAPARATES NAVIDEÑOS CHURRIANA",
-    "fecha_recepcion": "2026-10-29",
-    "organismo": "AYUNTAMIENTO DE MÁLAGA",
-    "nivel1": "LOCAL",
-    "nivel2": "MÁLAGA",
-    "importe": 700,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Cultura",
-    "fecha_inicio_solicitud": null,
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/938707",
-    "slug": "938707-xi-concurso-de-escaparates-navidenos-churriana",
-    "url": "https://subvenciones.devetty.es/ayuda/938707-xi-concurso-de-escaparates-navidenos-churriana?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1140266,
@@ -16711,23 +16609,6 @@
     "url": "https://subvenciones.devetty.es/ayuda/937016-extracto-de-bases-reguladoras-de-concesion-de-premios-del-certamen-de?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
-    "id": 1138565,
-    "numero_convocatoria": "937004",
-    "descripcion": "Convocatoria 8º Premio de Recitación Poética del Segrià 2026 (Exp. 10440/2026)",
-    "fecha_recepcion": "2026-10-21",
-    "organismo": "CONSELL COMARCAL DE SEGRIÀ",
-    "nivel1": "LOCAL",
-    "nivel2": "CONSELL COMARCAL DEL SEGRIA",
-    "importe": 885,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Cultura",
-    "fecha_inicio_solicitud": "2026-10-27",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/937004",
-    "slug": "937004-convocatoria-8o-premio-de-recitacion-poetica-del-segria-2026-exp",
-    "url": "https://subvenciones.devetty.es/ayuda/937004-convocatoria-8o-premio-de-recitacion-poetica-del-segria-2026-exp?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
     "id": 1138562,
     "numero_convocatoria": "937001",
     "descripcion": "SUBVENCIONES PARA LA CONSOLIDACIÓN Y MANTENIMIENTO DE ACTIVIDADES ECONÓMICAS EN LA ISLA DE EL HIERRO 2026",
@@ -17406,23 +17287,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936731",
     "slug": "936731-bases-convocatoria-subvenciones-en-regimen-de-concurrencia-competitiva",
     "url": "https://subvenciones.devetty.es/ayuda/936731-bases-convocatoria-subvenciones-en-regimen-de-concurrencia-competitiva?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1138290,
-    "numero_convocatoria": "936729",
-    "descripcion": "CONVOCATORIA DE SUBVENCIONES PARA LOS GASTOS DEL HOGAR DE PERSONAS PROPIETARIAS O USUFRUCTUARIAS DE VIVIENDAS QUE LAS DESTINEN A ALQUILER SOCIAL. 2026",
-    "fecha_recepcion": "2026-10-21",
-    "organismo": "AYUNTAMIENTO DE VALLS",
-    "nivel1": "LOCAL",
-    "nivel2": "VALLS",
-    "importe": 13877.1,
-    "beneficiario": "Personas físicas",
-    "finalidad": "Acceso a la vivienda y fomento de la edificación",
-    "fecha_inicio_solicitud": "2026-10-27",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936729",
-    "slug": "936729-convocatoria-de-subvenciones-para-los-gastos-del-hogar-de-personas",
-    "url": "https://subvenciones.devetty.es/ayuda/936729-convocatoria-de-subvenciones-para-los-gastos-del-hogar-de-personas?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1138283,
@@ -18205,23 +18069,6 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936393",
     "slug": "936393-bases-especificas-y-convocatoria-de-ayudas-a-deportistas-de-las",
     "url": "https://subvenciones.devetty.es/ayuda/936393-bases-especificas-y-convocatoria-de-ayudas-a-deportistas-de-las?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
-  },
-  {
-    "id": 1137953,
-    "numero_convocatoria": "936392",
-    "descripcion": "Convocatoria de subvenciones para el fomento del tejido empresarial local 2026",
-    "fecha_recepcion": "2026-10-20",
-    "organismo": "AYUNTAMIENTO DE SANT QUIRZE DEL VALLÈS",
-    "nivel1": "LOCAL",
-    "nivel2": "SANT QUIRZE DEL VALLÈS",
-    "importe": 26000,
-    "beneficiario": "Autónomos y pymes",
-    "finalidad": "Fomento del Empleo",
-    "fecha_inicio_solicitud": "2026-10-20",
-    "fecha_fin_solicitud": "2026-11-24",
-    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/936392",
-    "slug": "936392-convocatoria-de-subvenciones-para-el-fomento-del-tejido-empresarial",
-    "url": "https://subvenciones.devetty.es/ayuda/936392-convocatoria-de-subvenciones-para-el-fomento-del-tejido-empresarial?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   },
   {
     "id": 1137951,
@@ -24835,5 +24682,22 @@
     "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943294",
     "slug": "943294-extracto-del-acuerdo-del-consejo-rector-del-ime-de-11062026",
     "url": "https://subvenciones.devetty.es/ayuda/943294-extracto-del-acuerdo-del-consejo-rector-del-ime-de-11062026?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
+  },
+  {
+    "id": 1145402,
+    "numero_convocatoria": "943841",
+    "descripcion": "Subvenciones para cubrir gastos del transporte de agua mediante camiones cisterna municipios alerta y prealerta sequía",
+    "fecha_recepcion": "2026-11-22",
+    "organismo": "DIRECCIÓN GENERAL DE RECURSOS HÍDRICOS",
+    "nivel1": "AUTONOMICA",
+    "nivel2": "ILLES BALEARS",
+    "importe": 700000,
+    "beneficiario": "Asociaciones y entidades sin ánimo de lucro",
+    "finalidad": "Otras actuaciones de carácter económico",
+    "fecha_inicio_solicitud": null,
+    "fecha_fin_solicitud": null,
+    "url_bdns": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943841",
+    "slug": "943841-subvenciones-para-cubrir-gastos-del-transporte-de-agua-mediante",
+    "url": "https://subvenciones.devetty.es/ayuda/943841-subvenciones-para-cubrir-gastos-del-transporte-de-agua-mediante?utm_source=github&utm_medium=dataset&utm_campaign=subvenciones"
   }
 ]
