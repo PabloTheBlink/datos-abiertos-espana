@@ -1,1 +1,1151 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="description" content="Conjuntos de datos públicos de España en CSV y JSON."><meta name="viewport" content="width=device-width, initial-scale=1"><title>Datos abiertos de España</title><style>body{font-family:system-ui,sans-serif;line-height:1.6;max-width:900px;margin:2rem auto;padding:0 1rem;color:#222}a{color:#0756a3}a:visited{color:#663399}li{margin:.35rem 0}footer{margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd;font-size:.9rem;color:#555}</style></head><body><h1>Datos abiertos de España</h1><p>Datos abiertos públicos en CSV y JSON.</p><ul><li><a href="gasolineras/index.html">Gasolineras de España</a> — 11558 registros; <a href="gasolineras/gasolineras.csv">CSV</a>, <a href="gasolineras/gasolineras.json">JSON</a>, <a href="https://fuelspot.devetty.es">Web</a></li><li><a href="subastas/index.html">Subastas del BOE</a> — 789 registros; <a href="subastas/subastas.csv">CSV</a>, <a href="subastas/subastas.json">JSON</a>, <a href="https://subastas.devetty.es">Web</a></li><li><a href="subvenciones/index.html">Subvenciones y ayudas</a> — 1453 registros; <a href="subvenciones/subvenciones.csv">CSV</a>, <a href="subvenciones/subvenciones.json">JSON</a>, <a href="https://subvenciones.devetty.es">Web</a></li><li><a href="oposiciones/index.html">Convocatorias de empleo público</a> — 480 registros; <a href="oposiciones/oposiciones.csv">CSV</a>, <a href="oposiciones/oposiciones.json">JSON</a>, <a href="https://oposiciones.devetty.es">Web</a></li></ul><footer>Fuente: <a href="https://github.com/PabloTheBlink/datos-abiertos-espana">https://github.com/PabloTheBlink/datos-abiertos-espana</a> · Consulta los datos en <a href="https://pablotheblink.github.io/datos-abiertos-espana/">https://pablotheblink.github.io/datos-abiertos-espana/</a></footer></body></html>
+<!doctype html>
+<html lang="es" data-theme="editorial">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos Abiertos de España · Datasets limpios en CSV y JSON</title>
+  <meta name="description" content="Conjuntos de datos públicos oficiales de España (gasolineras, subastas BOE, subvenciones BDNS y empleo público), normalizados y actualizados a diario en CSV y JSON.">
+  <meta name="keywords" content="datos abiertos espana, open data spain, gasolineras csv, subastas boe json, subvenciones bdns dataset, oposiciones boe csv">
+  <meta name="theme-color" content="#0B0A08">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Datos Abiertos de España · Datasets limpios en CSV y JSON">
+  <meta property="og:description" content="Datos públicos oficiales de España actualizados a diario: gasolineras, subastas BOE, subvenciones y empleo público en CSV y JSON listos para usar.">
+  <meta property="og:image" content="assets/banner.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Devetty editorial@1 tokens */
+    :root {
+      --dv-bg: #0B0A08;
+      --dv-surface: #171512;
+      --dv-surface-raised: #1F1C18;
+      --dv-surface-inner: #26221D;
+      --dv-text: #F3EDE2;
+      --dv-text-bright: #FFFFFF;
+      --dv-muted: #B6AB9B;
+      --dv-subtle: #7A7265;
+      --dv-hairline: rgba(243, 237, 226, 0.12);
+      --dv-border: rgba(243, 237, 226, 0.18);
+      --dv-border-strong: rgba(243, 237, 226, 0.32);
+
+      --dv-accent: #7697FF;
+      --dv-accent-fuel: #5EDFD1;
+      --dv-accent-subastas: #FFAA73;
+      --dv-accent-subvenciones: #A4DD79;
+      --dv-accent-oposiciones: #C6EB52;
+      --dv-gold: #FFB340;
+
+      --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+      --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', 'ui-monospace', monospace;
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+      --radius-pill: 999px;
+
+      --container: 1180px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: var(--dv-bg);
+      color: var(--dv-text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      background: radial-gradient(circle at 85% 10%, rgba(255, 179, 64, 0.06), transparent 40%),
+                  radial-gradient(circle at 15% 35%, rgba(118, 151, 255, 0.05), transparent 40%),
+                  var(--dv-bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    code, pre {
+      font-family: var(--font-mono);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Top utility bar */
+    .topbar {
+      border-bottom: 1px solid var(--dv-hairline);
+      background: rgba(11, 10, 8, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: 64px;
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-glyph {
+      width: 28px;
+      height: 28px;
+      background: var(--dv-surface-inner);
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--dv-gold);
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--dv-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-left: 4px;
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      font-size: 0.88rem;
+      color: var(--dv-muted);
+      transition: color 0.2s ease;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: var(--dv-text);
+    }
+
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--dv-surface-raised);
+      border: 1px solid var(--dv-border);
+      color: var(--dv-text);
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      transition: all 0.2s ease;
+      min-height: 40px;
+    }
+
+    .btn-github:hover {
+      border-color: var(--dv-gold);
+      background: var(--dv-surface-inner);
+      color: #FFF;
+    }
+
+    .status-pulse {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--dv-accent-subvenciones);
+      background: rgba(164, 221, 121, 0.08);
+      border: 1px solid rgba(164, 221, 121, 0.25);
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--dv-accent-subvenciones);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--dv-accent-subvenciones);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Hero section */
+    .hero {
+      padding: 4.5rem 0 3.5rem;
+      border-bottom: 1px solid var(--dv-hairline);
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--dv-gold);
+      margin-bottom: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: var(--dv-text-bright);
+      margin-bottom: 1.5rem;
+      max-width: 960px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--dv-gold);
+      font-weight: 700;
+    }
+
+    .hero-lead {
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      color: var(--dv-muted);
+      max-width: 760px;
+      line-height: 1.6;
+      margin-bottom: 2.25rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--dv-gold);
+      color: #0B0A08;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+      min-height: 48px;
+      border: 1px solid var(--dv-gold);
+    }
+
+    .btn-primary:hover {
+      background: #FFC062;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--dv-surface);
+      border: 1px solid var(--dv-border);
+      color: var(--dv-text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+      min-height: 48px;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--dv-border-strong);
+      background: var(--dv-surface-raised);
+    }
+
+    /* KPI Bar */
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--dv-hairline);
+      border: 1px solid var(--dv-hairline);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .kpi-cell {
+      background: var(--dv-surface);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .kpi-num {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      font-weight: 800;
+      color: var(--dv-text-bright);
+      line-height: 1.1;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--dv-subtle);
+    }
+
+    /* Sections */
+    .section {
+      padding: 4.5rem 0;
+      border-bottom: 1px solid var(--dv-hairline);
+    }
+
+    .section-header {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dv-muted);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--dv-text-bright);
+      line-height: 1.15;
+    }
+
+    /* Dataset Cards Grid */
+    .datasets-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .dataset-card {
+      background: var(--dv-surface);
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .dataset-card:hover {
+      border-color: var(--dv-border-strong);
+      transform: translateY(-2px);
+    }
+
+    .dataset-card-top {
+      margin-bottom: 1.5rem;
+    }
+
+    .dataset-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .dataset-chip {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 9px;
+      border-radius: var(--radius-sm);
+      border: 1px solid;
+    }
+
+    .chip-fuel {
+      color: var(--dv-accent-fuel);
+      border-color: rgba(94, 223, 209, 0.35);
+      background: rgba(94, 223, 209, 0.08);
+    }
+
+    .chip-subastas {
+      color: var(--dv-accent-subastas);
+      border-color: rgba(255, 170, 115, 0.35);
+      background: rgba(255, 170, 115, 0.08);
+    }
+
+    .chip-subvenciones {
+      color: var(--dv-accent-subvenciones);
+      border-color: rgba(164, 221, 121, 0.35);
+      background: rgba(164, 221, 121, 0.08);
+    }
+
+    .chip-oposiciones {
+      color: var(--dv-accent-oposiciones);
+      border-color: rgba(198, 235, 82, 0.35);
+      background: rgba(198, 235, 82, 0.08);
+    }
+
+    .dataset-count {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--dv-muted);
+    }
+
+    .dataset-card-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--dv-text-bright);
+      margin-bottom: 0.6rem;
+    }
+
+    .dataset-card-desc {
+      font-size: 0.93rem;
+      color: var(--dv-muted);
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .dataset-meta {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--dv-subtle);
+      border-top: 1px dashed var(--dv-hairline);
+      padding-top: 0.9rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .dataset-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--dv-surface-inner);
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--dv-text);
+      transition: all 0.2s ease;
+      min-height: 38px;
+    }
+
+    .btn-download:hover {
+      background: var(--dv-text);
+      color: var(--dv-bg);
+      border-color: var(--dv-text);
+    }
+
+    .btn-explore {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 12px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--dv-gold);
+      margin-left: auto;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-explore:hover {
+      text-decoration: underline;
+    }
+
+    /* Code Snippets Section */
+    .code-box {
+      background: var(--dv-surface);
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .code-tabs {
+      display: flex;
+      background: var(--dv-surface-inner);
+      border-bottom: 1px solid var(--dv-hairline);
+      overflow-x: auto;
+    }
+
+    .code-tab-btn {
+      padding: 12px 20px;
+      background: transparent;
+      border: none;
+      color: var(--dv-muted);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .code-tab-btn.active {
+      color: var(--dv-gold);
+      border-bottom-color: var(--dv-gold);
+      background: var(--dv-surface);
+    }
+
+    .code-tab-btn:hover:not(.active) {
+      color: var(--dv-text);
+    }
+
+    .code-panel {
+      display: none;
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .code-panel.active {
+      display: block;
+    }
+
+    .code-panel pre {
+      overflow-x: auto;
+      font-size: 0.86rem;
+      line-height: 1.6;
+      color: #E6E1DC;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 6px 12px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      background: var(--dv-surface-inner);
+      border: 1px solid var(--dv-border);
+      color: var(--dv-muted);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      color: var(--dv-text);
+      border-color: var(--dv-gold);
+    }
+
+    /* Comparison / Features table */
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-md);
+      background: var(--dv-surface);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+
+    table.data-table th {
+      background: var(--dv-surface-inner);
+      padding: 14px 18px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--dv-muted);
+      border-bottom: 1px solid var(--dv-hairline);
+    }
+
+    table.data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--dv-hairline);
+      color: var(--dv-text);
+    }
+
+    table.data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.data-table tr:hover td {
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    /* Ecosystem / Devetty */
+    .eco-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .eco-card {
+      background: var(--dv-surface);
+      border: 1px solid var(--dv-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .eco-card:hover {
+      border-color: var(--dv-gold);
+      transform: translateY(-2px);
+    }
+
+    .eco-card h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--dv-text-bright);
+      margin-bottom: 0.5rem;
+    }
+
+    .eco-card p {
+      font-size: 0.86rem;
+      color: var(--dv-muted);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .eco-link {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--dv-gold);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      padding: 4rem 0 3rem;
+      background: #080706;
+      border-top: 1px solid var(--dv-hairline);
+      font-size: 0.85rem;
+      color: var(--dv-subtle);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-brand {
+      max-width: 480px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--dv-hairline);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+    }
+
+    /* Mobile First Adjustments */
+    @media (max-width: 768px) {
+      .topbar {
+        height: 56px;
+        padding: 0;
+      }
+      .topbar-inner {
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+      .brand {
+        font-size: 0.95rem;
+      }
+      .brand-sub {
+        display: none;
+      }
+      .status-pulse {
+        padding: 3px 8px;
+        font-size: 0.68rem;
+        white-space: nowrap;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero {
+        padding: 3rem 0 2.5rem;
+      }
+      .kpi-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .datasets-grid {
+        grid-template-columns: 1fr;
+      }
+      .eco-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .btn-primary, .btn-secondary {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="./" class="brand">
+        <span class="brand-glyph">D°</span>
+        <span>Datos Abiertos <span class="brand-sub">España</span></span>
+      </a>
+
+      <div class="status-pulse">
+        <span class="status-dot"></span>
+        <span>Actualización diaria · 2026-11-24</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#datasets" class="nav-link">Datasets</a>
+        <a href="#quickstart" class="nav-link">Uso rápido</a>
+        <a href="#ecosistema" class="nav-link">Webs Devetty</a>
+        <a href="https://github.com/PabloTheBlink/datos-abiertos-espana" target="_blank" rel="noopener" class="btn-github">
+          <span>★</span> Star en GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">
+        ● SECTOR PÚBLICO ESPAÑOL · DATOS ABIERTOS 2026
+      </div>
+
+      <h1 class="hero-title">
+        Datos oficiales de España, <em>limpios y actualizados</em> cada día.
+      </h1>
+
+      <p class="hero-lead">
+        Descarga directa en CSV y JSON de gasolineras, subastas del BOE, subvenciones y empleo público. Sin formularios, sin claves de API y sin lidiar con formatos anticuados.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#datasets" class="btn-primary">
+          <span>Explorar los 4 Datasets ↓</span>
+        </a>
+        <a href="https://github.com/PabloTheBlink/datos-abiertos-espana" target="_blank" rel="noopener" class="btn-secondary">
+          <span>Ver Repositorio en GitHub ↗</span>
+        </a>
+      </div>
+
+      <!-- KPI summary strip -->
+      <div class="kpi-strip">
+        <div class="kpi-cell">
+          <div class="kpi-num">14.280</div>
+          <div class="kpi-lbl">Registros Normalizados</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-num">Diario</div>
+          <div class="kpi-lbl">Frecuencia Automatizada</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-num">CSV · JSON</div>
+          <div class="kpi-lbl">Formatos Listos para Usar</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-num">Ley 37/2007</div>
+          <div class="kpi-lbl">Reutilización Pública</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datasets Section -->
+  <section class="section" id="datasets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">● CATÁLOGO DE DATOS · 01 / 04</span>
+        <h2 class="section-title">Conjuntos de datos disponibles</h2>
+      </div>
+
+      <div class="datasets-grid">
+        <!-- Gasolineras de España -->
+        <article class="dataset-card">
+          <div class="dataset-card-top">
+            <div class="dataset-badge-row">
+              <span class="dataset-chip chip-fuel">⛽ MITECO · Carburantes</span>
+              <span class="dataset-count">11.558 filas</span>
+            </div>
+            <h3 class="dataset-card-title">Gasolineras de España</h3>
+            <p class="dataset-card-desc">
+              Estaciones de servicio con dirección, ubicación y precios de carburantes comunicados a la fuente pública. Los precios pueden cambiar desde su última actualización.
+            </p>
+            <div class="dataset-meta">
+              <span>Fuente: Ministerio para la Transición Ecológica</span>
+              <span>Columnas: station_id, brand_title, address, postal_code, municipio_name, provincia_name...</span>
+            </div>
+          </div>
+          <div class="dataset-actions">
+            <a href="gasolineras/gasolineras.csv" download class="btn-download">Descargar CSV</a>
+            <a href="gasolineras/gasolineras.json" download class="btn-download">Descargar JSON</a>
+            <a href="https://fuelspot.devetty.es?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="btn-explore">Web Gasolineras de España ↗</a>
+          </div>
+        </article>
+        <!-- Subastas del BOE -->
+        <article class="dataset-card">
+          <div class="dataset-card-top">
+            <div class="dataset-badge-row">
+              <span class="dataset-chip chip-subastas">🏛️ BOE · Subastas</span>
+              <span class="dataset-count">789 filas</span>
+            </div>
+            <h3 class="dataset-card-title">Subastas del BOE</h3>
+            <p class="dataset-card-desc">
+              Anuncios de subastas públicas con información del bien, organismo, fechas y valores publicados. Los detalles y condiciones corresponden a la fuente oficial.
+            </p>
+            <div class="dataset-meta">
+              <span>Fuente: Portal de Subastas del BOE</span>
+              <span>Columnas: id, organismo, estado, fecha_inicio, fecha_conclusion, tipo_bien_label...</span>
+            </div>
+          </div>
+          <div class="dataset-actions">
+            <a href="subastas/subastas.csv" download class="btn-download">Descargar CSV</a>
+            <a href="subastas/subastas.json" download class="btn-download">Descargar JSON</a>
+            <a href="https://subastas.devetty.es?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="btn-explore">Web Subastas del BOE ↗</a>
+          </div>
+        </article>
+        <!-- Subvenciones y ayudas -->
+        <article class="dataset-card">
+          <div class="dataset-card-top">
+            <div class="dataset-badge-row">
+              <span class="dataset-chip chip-subvenciones">💶 BDNS · Hacienda</span>
+              <span class="dataset-count">1.453 filas</span>
+            </div>
+            <h3 class="dataset-card-title">Subvenciones y ayudas</h3>
+            <p class="dataset-card-desc">
+              Convocatorias de ayudas públicas con organismo convocante, importes, finalidad y plazos disponibles. La vigencia y las condiciones se consultan en la fuente oficial.
+            </p>
+            <div class="dataset-meta">
+              <span>Fuente: BDNS (Ministerio de Hacienda)</span>
+              <span>Columnas: id, numero_convocatoria, descripcion, fecha_recepcion, organismo, nivel1...</span>
+            </div>
+          </div>
+          <div class="dataset-actions">
+            <a href="subvenciones/subvenciones.csv" download class="btn-download">Descargar CSV</a>
+            <a href="subvenciones/subvenciones.json" download class="btn-download">Descargar JSON</a>
+            <a href="https://subvenciones.devetty.es?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="btn-explore">Web Subvenciones y ayudas ↗</a>
+          </div>
+        </article>
+        <!-- Convocatorias de empleo público -->
+        <article class="dataset-card">
+          <div class="dataset-card-top">
+            <div class="dataset-badge-row">
+              <span class="dataset-chip chip-oposiciones">📋 BOE · Empleo Público</span>
+              <span class="dataset-count">480 filas</span>
+            </div>
+            <h3 class="dataset-card-title">Convocatorias de empleo público</h3>
+            <p class="dataset-card-desc">
+              Convocatorias de empleo público publicadas en el BOE, con puestos, plazas, ámbito y plazos de presentación cuando están disponibles. La publicación oficial prevalece para consultar sus bases.
+            </p>
+            <div class="dataset-meta">
+              <span>Fuente: Boletín Oficial del Estado</span>
+              <span>Columnas: identificador, titulo, fecha_publicacion, departamento, tipo_proceso, acceso...</span>
+            </div>
+          </div>
+          <div class="dataset-actions">
+            <a href="oposiciones/oposiciones.csv" download class="btn-download">Descargar CSV</a>
+            <a href="oposiciones/oposiciones.json" download class="btn-download">Descargar JSON</a>
+            <a href="https://oposiciones.devetty.es?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="btn-explore">Web Convocatorias de empleo público ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Provincias indices -->
+      <div style="background: var(--dv-surface); border: 1px solid var(--dv-border); border-radius: var(--radius-md); padding: 1.5rem 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 1.15rem; color: var(--dv-text-bright); margin-bottom: 4px;">Explorar datos por provincias y categorías</h4>
+          <p style="font-size: 0.88rem; color: var(--dv-muted);">Consulta páginas desglosadas por comunidad autónoma, provincia y organismo convocante.</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="gasolineras/index.html" class="btn-download">Provincias Gasolineras →</a>
+          <a href="subastas/index.html" class="btn-download">Provincias Subastas →</a>
+          <a href="subvenciones/index.html" class="btn-download">Municipios Subvenciones →</a>
+          <a href="oposiciones/index.html" class="btn-download">Departamentos Empleo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quickstart Code Section -->
+  <section class="section" id="quickstart">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">● INTEGRACIÓN EN 3 LÍNEAS · 02 / 04</span>
+        <h2 class="section-title">Consume los datos sin configurar nada</h2>
+      </div>
+
+      <div class="code-box">
+        <div class="code-tabs">
+          <button class="code-tab-btn active" onclick="switchCodeTab('curl')">cURL / Terminal</button>
+          <button class="code-tab-btn" onclick="switchCodeTab('python')">Python (Pandas)</button>
+          <button class="code-tab-btn" onclick="switchCodeTab('js')">JavaScript / Node.js</button>
+          <button class="code-tab-btn" onclick="switchCodeTab('duckdb')">DuckDB / SQL</button>
+        </div>
+
+        <!-- Panel cURL -->
+        <div class="code-panel active" id="panel-curl">
+          <button class="copy-btn" onclick="copyCode('code-curl')">Copiar</button>
+          <pre><code id="code-curl"># Descargar gasolineras actualizadas de hoy directamente en CSV
+curl -sL https://raw.githubusercontent.com/PabloTheBlink/datos-abiertos-espana/main/gasolineras/gasolineras.csv -o gasolineras.csv
+
+# Descargar las subastas activas del BOE en JSON
+curl -sL https://raw.githubusercontent.com/PabloTheBlink/datos-abiertos-espana/main/subastas/subastas.json -o subastas.json</code></pre>
+        </div>
+
+        <!-- Panel Python -->
+        <div class="code-panel" id="panel-python">
+          <button class="copy-btn" onclick="copyCode('code-python')">Copiar</button>
+          <pre><code id="code-python">import pandas as pd
+
+# Cargar directamente el CSV de gasolineras sin descargarlo previamente
+url = "https://raw.githubusercontent.com/PabloTheBlink/datos-abiertos-espana/main/gasolineras/gasolineras.csv"
+df = pd.read_csv(url)
+
+# Filtrar las 5 estaciones más baratas de Diésel A en Madrid
+top5 = df[df['provincia_name'] == 'Madrid'].sort_values('price_diesel_a')[['brand_title', 'municipio_name', 'price_diesel_a']].head(5)
+print(top5)</code></pre>
+        </div>
+
+        <!-- Panel JS -->
+        <div class="code-panel" id="panel-js">
+          <button class="copy-btn" onclick="copyCode('code-js')">Copiar</button>
+          <pre><code id="code-js">// Fetch nativo en Node 18+ o navegador
+const res = await fetch("https://raw.githubusercontent.com/PabloTheBlink/datos-abiertos-espana/main/subvenciones/subvenciones.json");
+const subvenciones = await res.json();
+
+console.log(`Convocatorias abiertas hoy: ${subvenciones.length}`);
+console.log("Primera convocatoria:", subvenciones[0].descripcion, `${subvenciones[0].importe} €`);</code></pre>
+        </div>
+
+        <!-- Panel DuckDB -->
+        <div class="code-panel" id="panel-duckdb">
+          <button class="copy-btn" onclick="copyCode('code-duckdb')">Copiar</button>
+          <pre><code id="code-duckdb">-- Analizar plazas de empleo público por grupo directamente sobre el CSV remoto
+SELECT grupo, SUM(CAST(plazas AS INTEGER)) AS total_plazas
+FROM 'https://raw.githubusercontent.com/PabloTheBlink/datos-abiertos-espana/main/oposiciones/oposiciones.csv'
+WHERE plazas IS NOT NULL AND plazas != ''
+GROUP BY grupo
+ORDER BY total_plazas DESC;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem / Devetty Network -->
+  <section class="section" id="ecosistema">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">● ECOSISTEMA DE PRODUCTOS · 03 / 04</span>
+        <h2 class="section-title">Hecho por Devetty</h2>
+        <p style="color: var(--dv-muted); max-width: 700px; margin-top: 0.5rem;">
+          Devetty construye microaplicaciones de datos públicos para hacer comprensible la información de las administraciones.
+        </p>
+      </div>
+
+      <div class="eco-grid">
+        <div class="eco-card">
+          <div>
+            <h4>FuelSpot</h4>
+            <p>Comparador de carburantes con alertas de bajadas de precio, histórico y mapas interactivos.</p>
+          </div>
+          <a href="https://fuelspot.devetty.es?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">fuelspot.devetty.es →</a>
+        </div>
+
+        <div class="eco-card">
+          <div>
+            <h4>Subastas Devetty</h4>
+            <p>Buscador de subastas judiciales y de la AEAT con avisos por provincia y tipo de bien.</p>
+          </div>
+          <a href="https://subastas.devetty.es?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">subastas.devetty.es →</a>
+        </div>
+
+        <div class="eco-card">
+          <div>
+            <h4>Subvenciones Devetty</h4>
+            <p>Radar de ayudas públicas y fondos europeos estructurado para pymes y autónomos.</p>
+          </div>
+          <a href="https://subvenciones.devetty.es?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">subvenciones.devetty.es →</a>
+        </div>
+
+        <div class="eco-card">
+          <div>
+            <h4>Oposiciones Devetty</h4>
+            <p>Monitor de empleo público y procesos selectivos del Estado ordenados por grupo y titulación.</p>
+          </div>
+          <a href="https://oposiciones.devetty.es?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">oposiciones.devetty.es →</a>
+        </div>
+
+        <div class="eco-card">
+          <div>
+            <h4>LicitacionesAlerta</h4>
+            <p>Alertas diarias de contratos del sector público de la PLACSP clasificadas por actividad.</p>
+          </div>
+          <a href="https://licitacionesalerta.es?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">licitacionesalerta.es →</a>
+        </div>
+
+        <div class="eco-card">
+          <div>
+            <h4>Scrapers en Apify</h4>
+            <p>Actores cloud para extraer licitaciones de PLACSP y TED Europa a gran escala.</p>
+          </div>
+          <a href="https://apify.com/pablotheblink?utm_source=github&utm_medium=pages&utm_campaign=datos-abiertos-espana" target="_blank" rel="noopener" class="eco-link">apify.com/pablotheblink →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand" style="margin-bottom: 0.75rem;">
+            <span class="brand-glyph">D°</span>
+            <span>Datos Abiertos <span class="brand-sub">España</span></span>
+          </div>
+          <p style="color: var(--dv-subtle); line-height: 1.6; font-size: 0.84rem;">
+            Iniciativa de datos abiertos compilada y mantenida por Devetty. Datos originales procedentes de las sedes oficiales del Estado: MITECO, BOE y BDNS (Ministerio de Hacienda).
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dv-muted); margin-bottom: 0.75rem;">Recursos</div>
+            <p style="margin-bottom: 0.4rem;"><a href="#datasets" style="color: var(--dv-subtle); hover: color: var(--dv-text);">Datasets</a></p>
+            <p style="margin-bottom: 0.4rem;"><a href="#quickstart" style="color: var(--dv-subtle);">Ejemplos de código</a></p>
+            <p><a href="https://github.com/PabloTheBlink/datos-abiertos-espana" target="_blank" rel="noopener" style="color: var(--dv-subtle);">GitHub Repo</a></p>
+          </div>
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dv-muted); margin-bottom: 0.75rem;">Legal</div>
+            <p style="margin-bottom: 0.4rem; color: var(--dv-subtle);">Datos abiertos públicos</p>
+            <p style="margin-bottom: 0.4rem; color: var(--dv-subtle);">Ley 37/2007 Sector Público</p>
+            <p style="color: var(--dv-subtle);">Sin cookies de rastreo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Datos públicos reutilizables con cita de la fuente original (Ley 37/2007 del sector público).
+        </div>
+        <div>
+          <a href="https://github.com/PabloTheBlink/datos-abiertos-espana" target="_blank" rel="noopener" style="color: var(--dv-muted);">github.com/PabloTheBlink/datos-abiertos-espana</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function switchCodeTab(id) {
+      document.querySelectorAll('.code-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.code-panel').forEach(p => p.classList.remove('active'));
+      event.target.classList.add('active');
+      const panel = document.getElementById('panel-' + id);
+      if (panel) panel.classList.add('active');
+    }
+
+    function copyCode(id) {
+      const code = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = event.target;
+        const prev = btn.innerText;
+        btn.innerText = '¡Copiado!';
+        setTimeout(() => btn.innerText = prev, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
