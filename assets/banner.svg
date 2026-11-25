@@ -79,7 +79,7 @@
   <g transform="translate(60, 280)">
     <rect width="250" height="74" rx="8" fill="url(#cardGrad)" stroke="rgba(94, 223, 209, 0.3)" />
     <line x1="0" y1="0" x2="4" y2="74" stroke="#5EDFD1" stroke-width="4" />
-    <text x="20" y="32" fill="#5EDFD1" class="mono stat-lbl">⛽ 11.558 ESTACIONES</text>
+    <text x="20" y="32" fill="#5EDFD1" class="mono stat-lbl">⛽ 11.566 ESTACIONES</text>
     <text x="20" y="58" fill="#F3EDE2" class="sans stat-val">Gasolineras MITECO</text>
   </g>
 
@@ -87,7 +87,7 @@
   <g transform="translate(330, 280)">
     <rect width="250" height="74" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 170, 115, 0.3)" />
     <line x1="0" y1="0" x2="4" y2="74" stroke="#FFAA73" stroke-width="4" />
-    <text x="20" y="32" fill="#FFAA73" class="mono stat-lbl">🏛️ 789 LOTES ACTIVOS</text>
+    <text x="20" y="32" fill="#FFAA73" class="mono stat-lbl">🏛️ 788 LOTES ACTIVOS</text>
     <text x="20" y="58" fill="#F3EDE2" class="sans stat-val">Subastas del BOE</text>
   </g>
 
@@ -95,7 +95,7 @@
   <g transform="translate(600, 280)">
     <rect width="250" height="74" rx="8" fill="url(#cardGrad)" stroke="rgba(164, 221, 121, 0.3)" />
     <line x1="0" y1="0" x2="4" y2="74" stroke="#A4DD79" stroke-width="4" />
-    <text x="20" y="32" fill="#A4DD79" class="mono stat-lbl">💶 1.453 CONVOCATORIAS</text>
+    <text x="20" y="32" fill="#A4DD79" class="mono stat-lbl">💶 1.516 CONVOCATORIAS</text>
     <text x="20" y="58" fill="#F3EDE2" class="sans stat-val">Ayudas BDNS</text>
   </g>
 
@@ -103,7 +103,7 @@
   <g transform="translate(870, 280)">
     <rect width="270" height="74" rx="8" fill="url(#cardGrad)" stroke="rgba(198, 235, 82, 0.3)" />
     <line x1="0" y1="0" x2="4" y2="74" stroke="#C6EB52" stroke-width="4" />
-    <text x="20" y="32" fill="#C6EB52" class="mono stat-lbl">📋 480 PROCESOS</text>
+    <text x="20" y="32" fill="#C6EB52" class="mono stat-lbl">📋 505 PROCESOS</text>
     <text x="20" y="58" fill="#F3EDE2" class="sans stat-val">Empleo Público BOE</text>
   </g>
 </svg>

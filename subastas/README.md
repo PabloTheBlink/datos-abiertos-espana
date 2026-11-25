@@ -2,7 +2,7 @@
 
 Anuncios de subastas públicas con información del bien, organismo, fechas y valores publicados. Los detalles y condiciones corresponden a la fuente oficial.
 
-- Registros: 789
+- Registros: 788
 - Última actualización (UTC): 2026-11-24
 - Fuente: [Portal de Subastas del BOE](https://subastas.boe.es/)
 - Web: [https://subastas.devetty.es](https://subastas.devetty.es?utm_source=github&utm_medium=readme&utm_campaign=datos-abiertos-espana)

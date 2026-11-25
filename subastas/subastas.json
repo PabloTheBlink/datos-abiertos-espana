@@ -1,5 +1,22 @@
 [
   {
+    "id": "SUB-JA-2026-267990",
+    "organismo": "Sección Civil TI Lleida. Plz.n 2 - LLEIDA",
+    "estado": "Celebrándose",
+    "fecha_inicio": "2026-10-30T18:00:00+01:00",
+    "fecha_conclusion": "2026-12-09T18:13:04+01:00",
+    "tipo_bien_label": "Vivienda",
+    "descripcion_corta": "Subasta con varios lotes. Lote 1: URBANA: URBANA: DEPARTAMENTO NUMERO DIEZ.- VIVIENDA EN PLANTA CUARTA, de tipo B, de la casa sita en Lleida, calle Caballeros, número tres. Tiene una superficie útil de cincuenta y ocho metros, sesenta y nueve decímetros cuadrados, y onstruida de sesenta y ocho metros, veintinueve decímetros cuadrados. Se compone de recibidor, distribuidor, un baño, dos habitaciones, comedor-estar con cocina incorporada, terraza patio interior y balconesterrazas.¿ Lote 2: URBANA: NUMERO CINCO.- Vivienda en la planta segunda, puerta primera, de la casa sita en Alpicat, con frente a la calle Joaquín Costa, número veinticuatro, de superficie construida ciento seis metros, quince decímetros cuadrados, y útil de noventa metros cuadrados, compuesta de vestíbulo, cocina, 'Comedor-estar, distribuidor, baño, aseo y cuatro dormitorios.”",
+    "direccion": "Calle Caballeros nº3 4ºB",
+    "provincia": "Lleida",
+    "valor_subasta": null,
+    "puja_minima": null,
+    "deposito": null,
+    "url_boe": "https://subastas.boe.es/detalleSubasta.php?idSub=SUB-JA-2026-267990&ver=1",
+    "slug": "sub-ja-2026-267990-subasta-con-varios-lotes-lote-1-urbana-urbana",
+    "url": "https://subastas.devetty.es/subasta/sub-ja-2026-267990-subasta-con-varios-lotes-lote-1-urbana-urbana?utm_source=github&utm_medium=dataset&utm_campaign=subastas"
+  },
+  {
     "id": "SUB-AT-2026-26R2886001131",
     "organismo": "U.R. SUBASTAS MADRID - MADRID (AEAT)",
     "estado": "Celebrándose",
@@ -1443,23 +1460,6 @@
     "url_boe": "https://subastas.boe.es/detalleSubasta.php?idSub=SUB-JA-2026-269145&ver=1",
     "slug": "sub-ja-2026-269145-descripcion-que-consta-en-la-certificacion-de-cargas",
     "url": "https://subastas.devetty.es/subasta/sub-ja-2026-269145-descripcion-que-consta-en-la-certificacion-de-cargas?utm_source=github&utm_medium=dataset&utm_campaign=subastas"
-  },
-  {
-    "id": "SUB-JA-2026-262751",
-    "organismo": "Sección Civil TI Fuengirola. Plz. n 3 - FUENGIROLA",
-    "estado": "Celebrándose",
-    "fecha_inicio": "2026-06-11T18:00:00+02:00",
-    "fecha_conclusion": "2026-11-24T16:41:24+01:00",
-    "tipo_bien_label": "Vivienda",
-    "descripcion_corta": "URBANA",
-    "direccion": "CALLE TORCAL DE CALAHONDA NR4 PL BJ PT A BL 5",
-    "provincia": "Málaga",
-    "valor_subasta": 368718.75,
-    "puja_minima": null,
-    "deposito": 18435.93,
-    "url_boe": "https://subastas.boe.es/detalleSubasta.php?idSub=SUB-JA-2026-262751&ver=1",
-    "slug": "sub-ja-2026-262751-urbana",
-    "url": "https://subastas.devetty.es/subasta/sub-ja-2026-262751-urbana?utm_source=github&utm_medium=dataset&utm_campaign=subastas"
   },
   {
     "id": "SUB-JA-2024-227403",
@@ -12901,23 +12901,6 @@
     "url_boe": "https://subastas.boe.es/detalleSubasta.php?idSub=SUB-JA-2026-267420&ver=1",
     "slug": "sub-ja-2026-267420-finca-rustica-en-bedmar-huerta-en-el-sitio-conocido-como",
     "url": "https://subastas.devetty.es/subasta/sub-ja-2026-267420-finca-rustica-en-bedmar-huerta-en-el-sitio-conocido-como?utm_source=github&utm_medium=dataset&utm_campaign=subastas"
-  },
-  {
-    "id": "SUB-JA-2026-267563",
-    "organismo": "Sección Civil TI Jerez de la Frontera. Plz.n 5 - JEREZ DE LA FRONTERA",
-    "estado": "Celebrándose",
-    "fecha_inicio": "2026-11-13T18:00:00+01:00",
-    "fecha_conclusion": "2026-12-03T18:00:00+01:00",
-    "tipo_bien_label": "Vivienda",
-    "descripcion_corta": "VER EDICTO",
-    "direccion": "CALLE SOCRATES, VEINTICINCO",
-    "provincia": "Cádiz",
-    "valor_subasta": 1576000,
-    "puja_minima": null,
-    "deposito": 78800,
-    "url_boe": "https://subastas.boe.es/detalleSubasta.php?idSub=SUB-JA-2026-267563&ver=1",
-    "slug": "sub-ja-2026-267563-ver-edicto",
-    "url": "https://subastas.devetty.es/subasta/sub-ja-2026-267563-ver-edicto?utm_source=github&utm_medium=dataset&utm_campaign=subastas"
   },
   {
     "id": "SUB-JA-2026-267597",
